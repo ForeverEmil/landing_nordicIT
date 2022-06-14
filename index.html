@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iNordic</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class='main-container'>
+		<header class='main-container__header header-container'>
+			<div class='header-container__menu-container menu-container background_darkblue' id="navbar">
+				<nav>
+					<ul>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#courses'>
+								<span class='upper_case menu-container__first-word'>
+									выбрать
+								</span>
+								курс
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#study'>
+								<span class='upper_case menu-container__first-word'>
+									обучение
+								</span>
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#about'>
+								<span class='upper_case menu-container__first-word'>
+									трудоустройство
+								</span>
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#'>
+								<span class='upper_case menu-container__first-word'>
+									faq
+								</span>
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#opendoors'>
+								<span class='upper_case menu-container__first-word'>
+									новости
+								</span>
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#about'>
+								<span class='upper_case menu-container__first-word'>
+									о
+								</span> нас
+							</a>
+						</li>
+						<li class='menu-container__item'>
+							<a aria-label="menu-button" href='#corporate'>
+								<span class='upper_case menu-container__first-word'>
+									корпоративное
+								</span>
+								обучение
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class='header-container__content'>
+				<div class='header-container__title text_white'>
+					<div class='title__container block_in_inline position_left'>
+						<h1>
+							<div class='title__first-word upper_case'> курсы
+							</div>
+							программирования
+							<br>в Москве
+						</h1>
+						<div class='title__subtitle'>
+							Очное обучение с нуля
+						</div>
+					</div>
+
+					<article class='header-container__events events block_in_inline position_right'>
+						<h3>Ближайшие бесплатные события</h3>
+
+						<div class='events__item item'>
+
+							<div
+								style='background: url(https://ucare.timepad.ru/547c1036-e8ad-4409-a63e-835ccd981822/-/preview/308x600/-/format/jpeg/poster_event_1742023.jpg) center center / cover no-repeat; background-size: cover'>
+								<div class='item__overlay'>
+									<div class='item__discr'>
+										Очный мастер-класс по frontend'у: "Разработка браузерной игры с элементами
+										искусственного интеллекта"
+									</div>
+								</div>
+							</div>
+
+							<div class='item__data'>
+								20.09.2021 в 19:00
+							</div>
+						</div>
+
+						<div class='events__item item'>
+							<div
+								style='background: url(https://ucare.timepad.ru/117e3cbe-9b33-4292-b6e2-7fb03cd2a0b2/-/preview/308x600/-/format/jpeg/poster_event_1760173.jpg) center center / cover no-repeat;	'>
+								<div class='item__overlay'>
+									<div class='item__discr'>
+										День открытых дверей в Nordic IT School!
+									</div>
+								</div>
+							</div>
+							<div class='item__data'>
+								29.09.2021 в 19:30
+							</div>
+						</div>
+
+					</article>
+					<div class='clear'></div>
+					<div class='header-container__select-container select-container'>
+						<a href='#courses' class='button select-container__button'>
+							Выбрать курс
+						</a>
+					</div>
+				</div>
+
+		</header>
+
+		<main>
+			<div class='main-container__banner banner' id="opendoors">
+				<img alt='День открытых' src="./img/opendoorsday.jpeg" />
+			</div>
+			<div class='main-container__courses-discr courses-discr'>
+
+				<div class='courses-discr__elem elem'>
+					<div class='elem__img-container'>
+						<img src="./img/minigroups.svg" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						МИНИ-ГРУППЫ
+					</h3>
+					<p class='elem__discr'>
+						Мы — сторонники индивидуального подхода в обучении, насколько это возможно, поэтому проводим
+						занятия в группах по 6–10 человек.
+					</p>
+				</div>
+
+				<div class='courses-discr__elem'>
+					<div class='elem__img-container'>
+						<img src="./img/mentors.svg" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						ОПЫТНЫЕ НАСТАВНИКИ
+					</h3>
+					<p class='elem__discr'>
+						Мы несколько лет собирали нынешнюю команду преподавателей. Они не только являются крутыми
+						разработчиками крупных компаний.</p>
+				</div>
+
+				<div class='courses-discr__elem'>
+					<div class='elem__img-container'>
+						<img src="./img/maxpractice.png" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						МАКСИМУМ ПРАКТИКИ
+					</h3>
+					<p class='elem__discr'>
+						Уже на первом занятии вы начнете писать код, никакой воды.</p>
+				</div>
+
+				<div class='courses-discr__elem'>
+					<div class='elem__img-container'>
+						<img src="./img/videoarchive.png" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						ВИДЕОАРХИВ ЗАНЯТИЙ
+					</h3>
+					<p class='elem__discr'>
+						На каждом занятии преподаватель ведет видеозапись. Записи сохраняются в вашем личном кабинете,
+						вы всегда можете к ним вернуться и посмотреть то, что вы не поняли или забыли.</p>
+				</div>
+
+				<div class='courses-discr__elem'>
+					<div class='elem__img-container'>
+						<img src="./img/personaltraining.svg" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						ОЧНОЕ ИЛИ ОНЛАЙН ОБУЧЕНИЕ
+					</h3>
+					<p class='elem__discr'>
+						Можно выбрать форму обучения, которая вам удобна: посещать занятия в школе, либо подключаться к
+						вебинарам откуда угодно.</p>
+				</div>
+
+				<div class='courses-discr__elem'>
+					<div class='elem__img-container'>
+						<img src="./img/license.png" alt="Занятия в мини-группах">
+					</div>
+					<h3>
+						ЛИЦЕНЗИЯ
+					</h3>
+					<p class='elem__discr'>
+						У нас есть лицензия на образовательную деятельность и по окончании курса вы получите сертификат.
+					</p>
+				</div>
+
+			</div>
+			<div class='main-container__teachers teachers-container' id="study">
+				<h2 class='title teachers-container__title'>
+					УЧИМСЯ У ЛУЧШИХ
+				</h2>
+				<div class='teachers-container__box'>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='button item-card__btn-container '>
+								подробнее
+							</button>
+						</div>
+					</div>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='item-card__btn-container button'>
+								подробнее
+							</button>
+						</div>
+					</div>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='item-card__btn-container button'>
+								подробнее
+							</button>
+						</div>
+					</div>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='item-card__btn-container button'>
+								подробнее
+							</button>
+						</div>
+					</div>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='item-card__btn-container button'>
+								подробнее
+							</button>
+						</div>
+					</div>
+					<div class='teachers-container__item-card item-card'>
+						<div class='item-card__container-img'>
+							<img src='./img/person-shape.svg'>
+						</div>
+						<div class='item-card__title'>
+							Иванов Георгий
+						</div>
+						<div class='item-card__sub-title'>
+							Старший разработчик ПО
+						</div>
+						<div class='item-card__logo-container'>
+							<img src='./img/inordic-logo.svg'>
+						</div>
+						<div class='item-card__btn-container'>
+							<button class='item-card__btn-container button'>
+								подробнее
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id='courses' class='main-container__courses courses'>
+				<h2 class='courses__title title'>
+					Выберите курс
+				</h2>
+				<div class='courses__item-card item-card col-1'>
+					<img src="./img/web.svg" class="item-icon" />
+					<h3>Курс «Web-разработчик</h3>
+					<div class='item-card__time button'>
+						216 акад. ч.
+					</div>
+					<div class='item-card__discr'>
+						<p>
+							Очный курс для начинающих
+						</p>
+						<p>
+							Ближайшая группа: 29 сентября 2021
+						</p>
+					</div>
+					<div class='item-card__course-price course-price'>
+						<div class='course-price__month'>
+							<h4 class='course-price__title'>
+								Стоимость за месяц:
+							</h4>
+							<button class='course-price__button button'>
+								14 900 руб.
+							</button>
+						</div>
+						<div class='course-price__full'>
+							<h4 class='course-price__title'>
+								Стоимость за полный курс:
+							</h4>
+							<button class='course-price__button button'>
+								80 400 руб.
+							</button>
+							<button class='button-old course-price__button button '>
+								80 400 руб.
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='courses__item-card item-card col-2'>
+					<img src="./img/frontend.svg" />
+					<h3>Курс «Frontend-разработчик»</h3>
+					<div class='item-card__time button'>
+						216 акад. ч.
+					</div>
+					<div class='item-card__discr'>
+						<p>
+							Очный курс для начинающих
+						</p>
+						<p>
+							Ближайшая группа: 29 сентября 2021
+						</p>
+					</div>
+					<div class='item-card__course-price course-price'>
+						<div class='course-price__month'>
+							<h4 class='course-price__title'>
+								Стоимость за месяц:
+							</h4>
+							<button class='course-price__button button'>
+								14 900 руб.
+							</button>
+						</div>
+						<div class='course-price__full'>
+							<h4 class='course-price__title'>
+								Стоимость за полный курс:
+							</h4>
+							<button class='course-price__button button'>
+								80 400 руб.
+							</button>
+							<button class='course-price__button button button-old'>
+								80 400 руб.
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='courses__item-card item-card col-1'>
+					<img src="./img/html.svg" />
+					<h3>Курс «Верстка сайтов»</h3>
+					<div class='item-card__time button'>
+						216 акад. ч.
+					</div>
+					<div class='item-card__discr'>
+						<p>
+							Очный курс для начинающих
+						</p>
+						<p>
+							Ближайшая группа: 29 сентября 2021
+						</p>
+					</div>
+					<div class='item-card__course-price course-price'>
+						<div class='course-price__month'>
+							<h4 class='course-price__title'>
+								Стоимость за месяц:
+							</h4>
+							<button class='course-price__button button'>
+								14 900 руб.
+							</button>
+						</div>
+						<div class='course-price__full'>
+							<h4 class='course-price__title'>
+								Стоимость за полный курс:
+							</h4>
+							<button class='course-price__button button'>
+								80 400 руб.
+							</button>
+							<button class='course-price__button button button-old'>
+								80 400 руб.
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class='courses__item-card item-card col-2'>
+					<img src="./img/js.svg" />
+					<h3>Курс «JavaScript-разработчик»</h3>
+					<div class='item-card__time button'>
+						216 акад. ч.
+					</div>
+					<div class='item-card__discr'>
+						<p>
+							Очный курс для начинающих
+						</p>
+						<p>
+							Ближайшая группа: 29 сентября 2021
+						</p>
+					</div>
+					<div class='item-card__course-price course-price'>
+						<div class='course-price__month'>
+							<h4 class='course-price__title'>
+								Стоимость за месяц:
+							</h4>
+							<button class='course-price__button button'>
+								14 900 руб.
+							</button>
+						</div>
+						<div class='course-price__full'>
+							<h4 class='course-price__title'>
+								Стоимость за полный курс:
+							</h4>
+							<button class='course-price__button button'>
+								80 400 руб.
+							</button>
+							<button class='course-price__button button button-old'>
+								80 400 руб.
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='main-container__study study' id="corporate">
+				<div class="study__container">
+					<h2 class='study__title'>
+						Корпоративное обучение
+					</h2>
+					<button class='study__button'>Нажмите для подробной информации
+					</button>
+				</div>
+			</div>
+			<div class='main-container__jetbrains jetbrains'>
+				<div class="jetbrains__container">
+					<div class="jetbrains__logo">
+						<img src="">
+					</div>
+					<div class="jetbrains__logo2"></div>
+					<div class='jetbrains__text'>
+						Мы сотрудничаем с компанией JetBrains. Весь установленный софт в Школе лицензионный.
+					</div>
+				</div>
+			</div>
+		</main>
+	</section>
+	<!--
+	<div class='test'>
+		<div>TEST BLOCK</div>
+	</div>
+
+	<div class='display'>
+		<div class='inline'>inline</div>
+		<div class='inline'>inline</div>
+		<div class='block'>block</div>
+		<div class='block'>block</div>
+		<div class='inline-block'>inline-block</div>
+		<div class='inline-block'>inline-block</div>
+	</div>
+
+	<div class='flex-container'>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+		<div class='flex'>flex</div>
+	</div>
+	-->
+
+	<!-- Попапп для регистрации на дне открытых дверей -->
+	<div class="overlay" id="ovrly">
+		<div class='overlay__popup popup'>
+			<div class='popup__close' id="tgleClose">
+				Х
+			</div>
+			<div class='popup__content'>
+				<img src="./img/opendoorsday.jpeg" style="width: 100%;">
+				<h2>День открытых Дверей в Nordic IT School!</h2>
+				<p>
+					Если вы хотите войти в перспективный и увлекательный мир высоких технологий, но не знаете с чего
+					начать, то, специально для Вас, 1 сентября мы ответим на самые популярные вопросы:
+				</p>
+				<ul>
+					<li>
+						какие бывают направления в разработке?
+					</li>
+					<li>
+						что нужно, чтобы начать программировать?
+					</li>
+					<li>
+						сложно ли учиться?
+					</li>
+					<li>
+						как лучше учиться? очно или онлайн?
+					</li>
+					<li>
+						почему нужна помощь ментора?и кто это вообще такой?:)
+					</li>
+					<li>
+						что может дать школа программирования?
+					</li>
+					<li>
+						какие сложности ждут новичков и как их преодолевать?
+					</li>
+				</ul>
+				<p>
+					Ну и конечно же, вы сможете лично задать все вопросы и посмотреть школу изнутри.
+				</p>
+				<p>
+					Когда: 29 сентября в 19:30
+				</p>
+				<p>
+					Где: ул. Большая Спасская, 12
+				</p>
+			</div>
+			<form method="POST" action="#">
+				<p>
+					Имя: <input type="text" name="personal_name" value="Иван" placeholder="Введите свое имя" required />
+				</p>
+				<p>
+					Фамилия: <input type="text" name="personal_family" value="Иванов" placeholder="Введите свою фамилию"
+						required />
+				</p>
+				<p>
+					Возраст: <input type="number" name="personal_age" value="18" placeholder="Введите свой возраст"
+						required />
+				</p>
+				<p>
+					Секретный код: <input type="password" name="code" required>
+				</p>
+				<p>
+					<label for='inordic'>
+						Вы были в наше школе?:
+					</label>
+					<input type="checkbox" name="inordic" id="inordic" checked="true">
+				</p>
+				<p>
+					Вам есть 18 лет?
+				<p>
+					<label for="yes_accept">
+						Да
+					</label>
+
+					<input id='yes_accept' type="radio" name="accept_age">
+				</p>
+				<p>
+					<label for="no_accept">
+						Нет
+					</label>
+					<input id="no_accept" type="radio" name="accept_age" checked="true">
+				</p>
+				</p>
+				<p>
+					Выберете страну проживания
+					<select disabled name='country'>
+						<option value="RU">
+							Россия
+						</option>
+						<option value="UK">
+							Ураина
+						</option>
+						<option value="KZ">
+							Казахстан
+						</option>
+						<option value="US">
+							США
+						</option>
+						<option value="BZ">
+							Бразилия
+						</option>
+					</select>
+				</p>
+				<p>
+					О себе:
+					<textarea name='about'>
+
+					</textarea>
+				</p>
+				<input type="reset" value='Сброс'>
+				<input type="submit" value='Зарегистрироваться' />
+
+			</form>
+		</div>
+	</div>
+
+	<footer class='footer' id="about">
+		<button class='button footer__button' id="toggle" type="button">
+			День открытых дверей
+		</button>
+		<div class="footer-map">
+			<h2 class="map__title">МЫ РЯДОМ</h2>
+		</div>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9841007306454!2d37.64586031622873!3d55.77614798055959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a679c5bac7f%3A0xeb477cb6fc9be6ff!2sNordic%20IT%20School!5e0!3m2!1sen!2sru!4v1632654424753!5m2!1sen!2sru"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<section class="footer-info">
+			<div class="footer-cources">
+				<div class="cources__logo">
+					<img src="./img/web.svg" alt="Курс «Web-разработка»">
+					<a href="#" class="cources__title">Курс «Web-разработка»</a>
+				</div>
+				<div class="cources__logo">
+					<img src="./img/frontend.svg">
+					<a href="#" class="cources__title">Курс «Frontend-разработчик»</a>
+				</div>
+				<div class="cources__logo">
+					<img src="./img/html.svg">
+					<a href="#" class="cources__title">Курс «Верстка сайтов»</a>
+				</div>
+				<div class="cources__logo">
+					<img src="./img/js.svg">
+					<a href="#" class="cources__title">Курс «JavaScript-разработчик»</a>
+				</div>
+			</div>
+			<div class="footer-info-items">
+				<a href="#">О школе</a>
+				<a href="#">Новости</a>
+				<a href="#">Лицензия на образовательную деятельность</a>
+				<a href="#">Документы</a>
+				<a href="#">Оплата</a>
+				<a href="#">Политика конфиденциальности</a>
+				<a class="logo_lk" href="#">Вход в личный кабинет</a>
+			</div>
+			<div class="footer-contact">
+				<div class="contact-school-name">
+					<h2 class="school-name__title">NORDIC IT SCHOOL</h2>
+				</div>
+				<div class="contact-adress">Москва, ул. Большая Спасская 12</div>
+				<div class="contact-phone">+7 925 689 69 48</div>
+				<div class="contact-phone">+7 925 689 69 48</div>
+				<div class="contact-mail">
+					Мы работаем по будням с 11 до 19.<br>
+					<br>
+					<br>
+					moscow@inordic.ru
+				</div>
+				<div class="contact-social">
+					<a class="social__vk" href="#" target="blank" rel="nofollow"></a>
+					<a class="social__instagram" href="#" target="blank" rel="nofollow"></a>
+					<a class="social__telegram" href="#" target="blank" rel="nofollow"></a>
+					<a class="social__yandex" style="width: 77px;" href="#" target="blank" rel="nofollow"></a>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+
+</html>

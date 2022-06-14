@@ -1,0 +1,719 @@
+:root {
+	--main-bg-color-school: #2a284f;
+	--main-bg-color-school-light: #fff;
+	--main-bg-color-school-rgba: rgb(42 40 79 / 88%);
+	--main-red-color-school: #f34848;
+	--main-gray-color-school: #9e9db3;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background: #f7f7fa;
+	height: 2000px;
+	transition: all 0.7s ease 0s;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Общие блоки */
+.upper_case {
+	text-transform: capitalize;
+}
+
+#navbar {
+	transition: 1s;
+}
+
+.title {
+	text-align: center;
+	color: #ffffff;
+	font-size: 3rem;
+	font-weight: 300;
+	padding: 20px;
+	margin: 0;
+	background: var(--main-bg-color-school);
+	text-transform: uppercase;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.clear {
+	clear: both;
+}
+
+.button {
+	font-size: 24px;
+	padding: 10px 15px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: black;
+	color: white;
+	outline: 1px solid white;
+}
+
+.background_darkblue {
+	background: var(--main-bg-color-school);
+}
+
+.text_white {
+	color: #ffffff;
+}
+
+html body .main-container .button-old {
+	background: unset;
+	border: unset;
+	color: var(--main-gray-color-school);
+	position: relative;
+}
+
+.button-old::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: red;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/* Таблицы стилей меню - НАЧАЛО */
+
+.menu-container {
+	border-bottom: 3px solid white;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+.menu-container ul {}
+
+.menu-container__item {
+	display: inline-block;
+	padding: 25px;
+}
+
+.menu-container__item a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-container__item a:hover {
+	border-bottom: 2px solid white;
+}
+
+/* Таблицы стилей меню - КОНЕЦ */
+
+.header-container {
+	min-height: 100vh;
+	background: url(./img/northern-lights-moon-night.jpeg) center center/cover;
+	position: relative;
+}
+
+.header-container__title {
+	padding-top: 15%;
+}
+
+.header-container__title h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.header-container__content {
+	max-width: 80%;
+	margin: auto;
+}
+
+.title__subtitle {
+	font-size: 30px;
+}
+
+/* Начало: стили для блока - Ближайшие события */
+
+.events {
+	max-width: 670px;
+	font-size: 16px;
+	border-right: 3px solid #fdc931;
+	padding-right: 25px;
+}
+
+.events h3 {
+	font-weight: 900;
+	text-align: right;
+	margin-top: 0;
+}
+
+.events__item.item {
+	margin-bottom: 15px;
+}
+
+.item__discr {
+	max-width: 345px;
+	padding: 25px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.item__data {
+	text-align: right;
+}
+
+.block_in_inline {
+	display: block;
+}
+
+.position_right {
+	float: right;
+}
+
+.position_left {
+	float: left;
+}
+
+.item__overlay {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.item__overlay:hover {
+	background: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+/* Конец: стили для блока - Ближайшие события */
+
+.select-container {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.select-container__button {
+	background: rgba(206, 19, 19, 0.8);
+	border-radius: 4px;
+}
+
+
+.banner {}
+
+.banner img {
+	width: 100%;
+}
+
+.test {
+	width: 100%;
+	height: 800px;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.test div {
+	width: 200px;
+	height: 200px;
+	background: green;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex {
+	margin: 15px;
+	min-width: 400px;
+	border: 1px solid green;
+	background: white;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.courses {
+	display: grid;
+	grid-template-areas: "title title"
+		"col-1 col-2"
+		"col-1 col-2"
+		"col-1 col-2"
+		"col-1 col-2"
+		"col-1 col-2"
+		"col-1 col-2";
+}
+
+.courses-discr__elem {
+	background: white;
+	width: 30%;
+	height: 300px;
+	margin: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 4px;
+}
+
+.courses-discr__elem:hover {
+	box-shadow: 0 0 15px 0px #2a284f0d;
+}
+
+.courses-discr {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.courses-discr__elem h3 {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.courses-discr__elem h3:after {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: -18px;
+	left: 0;
+	right: 0;
+	width: 60px;
+	height: 3px;
+	margin: 0 auto;
+	background-color: #fdc931;
+}
+
+.elem__img-container {
+	height: 100px;
+}
+
+.elem__img-container img {
+	height: 100%;
+}
+
+.elem__discr {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.teachers-container {
+	background: #2a284f;
+	overflow: hidden;
+}
+
+.teachers-container__box {
+	display: flex;
+}
+
+.teachers-container h2 {}
+
+.teachers-container .item-card {
+	margin: 0 5px;
+	min-width: 340px;
+	background: white;
+	border-radius: 4px;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.teachers-container .item-card__container-img {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+.teachers-container .item-card__container-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.teachers-container .item-card__title {
+	padding: 15px 0;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.teachers-container .item-card__sub-title {}
+
+.teachers-container .item-card__logo-container {
+	max-width: 150px;
+	margin: 40px auto;
+}
+
+.teachers-container .item-card__logo-container img {
+	width: 100%;
+}
+
+.teachers-container .item-card__btn-container {}
+
+.teachers-container .item-card__btn-container button {
+	background: #2a284f;
+	font-size: 20px;
+	color: white;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.teachers-container .item-card__btn-container button::before {
+	content: "";
+	position: absolute;
+	left: -4px;
+	bottom: 0;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	background: #fdc931;
+	transition: all 1s;
+}
+
+.teachers-container .item-card__btn-container button:hover::before {
+	transform: rotate(0.5turn);
+	left: 140px;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: #151429d6;
+	z-index: 3;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	scrollbar-gutter: stable;
+}
+
+.overlay.active {
+	display: flex;
+}
+
+.overlay__popup {
+	background: white;
+	max-width: 50%;
+	max-height: 80vh;
+	position: relative;
+	padding: 25px;
+	font-size: 16px;
+	overflow-y: scroll;
+
+}
+
+.popup__close {
+	position: absolute;
+	top: 9px;
+	right: 4px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.popup__close:hover {
+	border: 1px solid white;
+	background: black;
+	color: white;
+}
+
+.popup ul {
+	margin: 10px;
+	list-style-type: '-';
+}
+
+.popup h2 {
+	font-size: 24px;
+}
+
+.popup__content {
+	border-bottom: 1px solid #fdc931;
+}
+
+.footer__button {
+	background: linear-gradient(to right, #36b764, #75cc49);
+	border-radius: 10px;
+	border: none;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+.cources__title h2 {
+	margin-bottom: 3%;
+}
+
+.courses .item-card {
+	border: 1px solid var(--main-bg-color-school);
+	text-align: center;
+	padding: 50px 0;
+	color: var(--main-bg-color-school-light);
+}
+
+.courses .item-card img {
+	width: 90px;
+	height: 90px;
+
+}
+
+.col-1 {
+	background: linear-gradient(to right, #7b91db, #7a4eda);
+}
+
+.col-2 {
+	background: linear-gradient(to right, #7a4eda, #7b91db);
+}
+
+.courses .item-card__time {
+	background: #fdc931;
+	color: black;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+}
+
+.item-card__discr p {
+	margin: 0;
+}
+
+.course-price__button {
+	background: var(--main-red-color-school);
+	font-size: 16px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.course-price__full .course-price__button {
+	background: var(--main-bg-color-school);
+	margin-right: 5px;
+}
+
+.study {
+	background: url(https://www.brinknews.com/wp-content/uploads/2019/12/shutterstock_1031044285.jpg) center center / cover no-repeat;
+}
+
+.study__title {
+	text-align: center;
+	color: #ffffff;
+	font-size: 3rem;
+	font-weight: 300;
+	padding-top: 60px;
+	width: 100%;
+	margin: 0;
+	text-transform: uppercase;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.study__container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: var(--main-bg-color-school-rgba);
+}
+
+.study__button {
+	margin-bottom: 45px;
+	margin-right: 23%;
+	padding: 6px 8px;
+	border: none;
+	background: none;
+	color: white;
+}
+
+.study__button:hover {
+	background: black;
+	border-radius: 5px;
+	background: #fdc931;
+	color: grey;
+}
+
+.jetbrains {
+	padding: 40px 20px;
+	background: #000000;
+	background: -webkit-linear-gradient(to right, #2d2d2d, #000000);
+	background: linear-gradient(to right, #2d2d2d, #000000);
+	overflow: hidden;
+	border-top: 4px solid white;
+}
+
+.jetbrains__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	font-size: 36px;
+	position: relative;
+	font-weight: 300;
+	align-items: center;
+}
+
+.jetbrains__logo {
+	background: url(https://upload.wikimedia.org/wikipedia/commons/1/1a/JetBrains_Logo_2016.svg) center center / contain no-repeat;
+	padding: 150px;
+	position: relative;
+}
+
+.jetbrains__logo2 {
+	background: url(https://upload.wikimedia.org/wikipedia/commons/1/1a/JetBrains_Logo_2016.svg) center center / contain no-repeat;
+	padding: 300px;
+	position: absolute;
+	right: -200px;
+	opacity: 0.3;
+	filter: blur(5px);
+}
+
+.jetbrains__text {
+	text-align: right;
+	position: relative;
+}
+
+.footer-map {
+	border-top: 4px solid white;
+}
+
+.map__title {
+	background: #2a284f;
+	color: white;
+	padding: 20px 0;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 300;
+	margin: 0;
+}
+
+.footer iframe {
+	width: 100%;
+}
+
+.footer-info {
+	height: 100%;
+	background: var(--main-bg-color-school);
+	color: white;
+	padding: 70px 150px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-cources div {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 5px;
+	width: auto;
+}
+
+.cources__logo img {
+	height: 30px;
+	width: 30px;
+	min-width: 40px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.footer-info-items {
+	max-width: 100%;
+}
+
+.footer-info a {
+	text-decoration: unset;
+	color: white;
+	display: block;
+	font-size: 1.2rem;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+.logo_lk::before {
+	content: "";
+	margin-right: 5px;
+	padding: 10px;
+	background: url(./img/login.svg) center center / contain no-repeat;
+}
+
+.footer-info a:hover {
+	color: #fdc931;
+}
+
+.footer-contact {
+	font-size: 1.2rem;
+}
+
+.footer-contact div {
+	padding: 5px 0;
+}
+
+.school-name__title {
+	margin: 0;
+}
+
+.contact-social {
+	display: flex;
+}
+
+.contact-social a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 10px 7px 10px 0;
+	box-shadow: 0 0 0 2px #2a284f;
+}
+
+.social__vk {
+	background: url(./img/vk.svg) center center / contain no-repeat;
+}
+
+.social__instagram {
+	background: url(./img/instagram.svg) center center / contain no-repeat;
+}
+
+.social__telegram {
+	background: url(./img/youtube.svg) center center / contain no-repeat;
+}
+
+.social__yandex {
+	background: url(./img/yandex.png) center center / contain no-repeat;
+}
